@@ -1,0 +1,21 @@
+﻿@page
+@model Web.Pages.Person.ListModel
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+<a asp-page="create">Create</a>
+<div class="row">
+    <table class="table">
+        @foreach (var person in Model.People)
+        {
+        <tr>
+            <td>@person.FirstName</td>
+            <td>@person.LastName</td>
+            <td>@person.Age</td>
+            <td>@person.Email</td>
+        </tr>
+        }
+    </table>
+</div>

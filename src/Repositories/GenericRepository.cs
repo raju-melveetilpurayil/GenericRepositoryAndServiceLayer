@@ -30,10 +30,7 @@ namespace Repositories
             await _applicationDbContext.SaveChangesAsync();
         }
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
+       
 
 
         public async Task EditAsync(T entity)

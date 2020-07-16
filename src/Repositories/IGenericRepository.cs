@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repositories
 {
-    public interface IGenericRepository<T> : IDisposable where T : class
+    public interface IGenericRepository<T>  where T : class
     {
         Task<IQueryable<T>> GetAllAsync();
         Task<IQueryable<T>> FindByAsync(Expression<Func<T, bool>> predicate);
