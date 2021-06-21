@@ -17,31 +17,6 @@ namespace Services
         {
             this.personRepository = personRepository;
         }
-        //public async Task<Person> AddAsync(Person entity)
-        //{
-        //    return await personRepository.AddAsync(entity);
-        //}
-
-        //public async Task DeleteAsync(Person entity)
-        //{
-        //     await personRepository.DeleteAsync(entity);
-        //}
-
-        //public async Task EditAsync(Person entity)
-        //{
-        //    await personRepository.EditAsync(entity);
-        //}
-
-        //public async Task<IQueryable<Person>> FindByAsync(Expression<Func<Person, bool>> predicate)
-        //{
-        //    return await personRepository.FindByAsync(predicate);
-        //}
-
-        //public async Task<IQueryable<Person>> GetAllAsync()
-        //{
-        //    return await personRepository.GetAllAsync();
-        //}
-
         public async Task<Person> GetSingleAsync(int personId)
         {
             return await personRepository.GetSingleAsync(personId);
